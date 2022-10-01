@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <!-- FontAwesome Icons -->
+ <script src="https://kit.fontawesome.com/764980d58c.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="./style.css">
+ <title>Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Title Area -->
+    <div class="title-area" id="title-area">
+      <div class="title">Calculator</div>
+      <div class="control-btns" id="control-btns">
+        
+        <i class="ctrl fa-sharp fa-solid fa-window-minimize" id="minimise"></i>
+        <i class="ctrl fa-regular fa-square" id="maximise"></i>
+        <i class="ctrl fa-solid fa-xmark" id="close"></i>
+
+      </div>
+    </div>
+
+    <!-- Display Area -->
+    <div class="display-area">
+      <input type="text" class="display" id="display">
+    </div>
+
+    <!-- Buttons Area -->
+    <div class="btn-area" id="btn-area">
+
+      <div class="number-btns" id="number-btns">
+        <button class="btn-1 btn-0" id="number" value="1">1</button>
+        <button class="btn-2 btn-0" id="number" value="2">2</button>
+        <button class="btn-3 btn-0" id="number" value="3">3</button>
+        <button class="btn-4 btn-0" id="number" value="4">4</button>
+        <button class="btn-5 btn-0" id="number" value="5">5</button>
+        <button class="btn-6 btn-0" id="number" value="6">6</button>
+        <button class="btn-7 btn-0" id="number" value="7">7</button>
+        <button class="btn-8 btn-0" id="number" value="8">8</button>
+        <button class="btn-9 btn-0" id="number" value="9">9</button>
+        <button class="btn-0" id="number" value="0">0</button>
+        <button class="btn-point btn-0" id="number" value=".">.</button>
+
+        <button type="reset" class="btn-reset btn-0" id="btn-reset" value="reset">C</button>
+      </div>
+
+      <!-- Operators Area -->
+      <div class="operator-btns" id="operator-btns">
+        <button class="multiplication" id="operator" value="x">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button class="subtraction" id="operator" value="-">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button class="division" id="operator" value="/">
+          <i class="fa-solid fa-divide"></i>
+        </button>
+        <button class="addition" id="operator" value="+">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button class="equal" id="equal">
+          <i class="fa-sharp fa-solid fa-equals"></i>
+        </button>
+      </div>
+
+  </div>
+  
+  <!-- <div class="new">
+     <input type="text" id="result" class="bottom-div"> 
+
+  </div> -->
+</body>
+<!-- Script -->
+<!-- <script src="./main.js"></script> -->
+<script src="./calc.js"></script>
+</html>
